@@ -590,7 +590,7 @@ def apply_multi_clf(clf, split_data, save_location,repeat = 1, apply_feature_sel
 #      plt.close()
      
      
-def clinical_train_test_split(single_timepoint_dataframe,, encode_targets = True, apply_SMOTE = True, random_state = 42):
+def clinical_train_test_split(single_timepoint_dataframe,encode_targets = True, apply_SMOTE = True, random_state = 42):
     """Applies stratified k-fold split into 50:50 train and test sets for the clinical data.
     
        Following this, SMOTE is applied to the training set to achieve a balanced training set.
